@@ -13,6 +13,12 @@ var Feather = (function(){
     return a + b;
   }
 
+  //>>>> 在这里面添加新函数，写法如上
+
+  // 你的代码...
+
+  //<<<<
+
   return ft;
 }());
 
