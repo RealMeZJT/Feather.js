@@ -4,34 +4,52 @@
 var Feather = (function(){
   var ft = {};
 
-  ft.greet = function() {
+  ft.greet = function() { //测试代码
       alert("Hello from the " + name + " library.");
   }
 
 
-  ft.sum = function(a,b) {
+  ft.sum = function(a,b) { //测试代码
     return a + b;
   }
 
   //>>>> 在这里面添加新函数，写法如上
 
   /**
-  * 生成随机人名(可作为测试数据使用)
+  * 生成随机中文人名数组
   *
   * @param {number} 设置数量
   * @return {[string]} 人名数组
   */
   ft.randomNames = function(num) {
+    //TODO: 名称最好2-4位都有。
+  }
+
+  /**
+  * 生成一个随机中文人名(可作为测试数据使用)
+  *
+  * @return {string} 人名
+  */
+  ft.randomName = function() {
+    //TODO: 名称最好2-4位都有可能出现。
+  }
+
+  /**
+  * 生成随机颜色数组
+  *
+  * @param {number} 设置数量
+  * @return {[string]} 颜色数组，颜色为十六进制，比如：#E5EFF8
+  */
+  ft.randomColorsHex = function(num) {
     //TODO:
   }
 
   /**
-  * 生成随机颜色(可作为测试数据使用)
+  * 生成一个随机颜色
   *
-  * @param {number} 设置数量
-  * @return {[string]} 颜色数组，颜色为十六进制如：#E5EFF8
+  * @return {[string]} 颜色为十六进制，比如：#E5EFF8
   */
-  ft.randomColorsHex = function(num) {
+  ft.randomColorHex = function() {
     //TODO:
   }
 
@@ -100,3 +118,5 @@ String.prototype.ft = (function(){
 
   return ft;
 }());
+
+export {Feather};
