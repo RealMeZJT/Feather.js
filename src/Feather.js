@@ -1,15 +1,13 @@
 'use strict';
 // 写法参考：http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
 // 规范参考：https://github.com/fex-team/styleguide/blob/master/javascript.md#243-%E6%96%87%E6%A1%A3%E5%8C%96%E6%B3%A8%E9%87%8A
-var Feather = (function(){
-  var ft = {};
-
-  ft.greet = function() { //测试代码
+class Feather {
+  greet() { //测试代码
       alert("Hello from the " + name + " library.");
   }
 
 
-  ft.sum = function(a,b) { //测试代码
+  sum(a,b) { //测试代码
     return a + b;
   }
 
@@ -21,7 +19,7 @@ var Feather = (function(){
   * @param {number} 设置数量
   * @return {[string]} 人名数组
   */
-  ft.randomNames = function(num) {
+  randomNames(num) {
     //TODO: 名称最好2-4位都有。
   }
 
@@ -30,7 +28,7 @@ var Feather = (function(){
   *
   * @return {string} 人名
   */
-  ft.randomName = function() {
+  randomName() {
     //TODO: 名称最好2-4位都有可能出现。
   }
 
@@ -40,7 +38,7 @@ var Feather = (function(){
   * @param {number} 设置数量
   * @return {[string]} 颜色数组，颜色为十六进制，比如：#E5EFF8
   */
-  ft.randomColorsHex = function(num) {
+  randomColorsHex(num) {
     //TODO:
   }
 
@@ -49,16 +47,17 @@ var Feather = (function(){
   *
   * @return {[string]} 颜色为十六进制，比如：#E5EFF8
   */
-  ft.randomColorHex = function() {
+  randomColorHex() {
     //TODO:
   }
 
+}
+
+
+  
   // 你的代码...
 
   //<<<<
-
-  return ft;
-}());
 
 
 //------------
@@ -119,4 +118,9 @@ String.prototype.ft = (function(){
   return ft;
 }());
 
-export {Feather};
+/*let feather = new Feather()
+
+  console.log(feather.sum(1,2));*/
+
+  
+module.exports =Feather;
