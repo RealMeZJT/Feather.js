@@ -10,7 +10,7 @@ class DateUtil {
     hour:     "hour",
     minute:   "minute",
     second:   "second",
-    weekday:  "weekday"
+    weekday:  "weekday" //星期几
   }
 
   /**
@@ -32,7 +32,7 @@ class DateUtil {
   /**
   * 增加日期(原日期不会被改变，只是返回新的日期)
   *
-  *   let date = Date() // "2019-03-14 07:00:00"
+  *   let mDate = Date() // "2019-03-14 09:00:00"
   *   let date2 = adding(date,Component.hour,1) // "2019-03-14 08:00:00"
   *   let date3 = adding(date,Component.month,4) // "2019-07-14 07:00:00"
   *
@@ -56,7 +56,8 @@ class DateUtil {
   * @param {date} 日期
   * @param {component} Component类型
   * @param {value}  Int类型。Component的值.
-  * @return {time} 用于判断的时间.Date类型.
+  * @param {time} 用于判断的时间.Date类型.
+  * @return {Bool}
   */
   static isWithin({date,component,value}, time) {
 
@@ -64,9 +65,14 @@ class DateUtil {
 
   /**
   *  获取Component的值
+  *  let date = Date() // "2019-03-15 09:00:00"
+  *  valueOf(date,Component.year) -> 2019
+  *  valueOf(date,Component.day) -> 15
+  *  valueOf(date,Component.weekday) -> 1 //当前星期的第1天
   *
   * @param {date} 日期
   * @param {component} Component类型
+  * return {Int} 值
   */
   valueOf(date,component) {
 
