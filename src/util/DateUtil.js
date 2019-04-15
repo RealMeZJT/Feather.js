@@ -62,4 +62,14 @@ class DateUtil {
 
   }
 
+  /**
+  *  获取Component的值
+  *
+  * @param {date} 日期
+  * @param {component} Component类型
+  */
+  valueOf(date,component) {
+
+  }
+
 }

@@ -1,43 +1,35 @@
 // 对Date类型的拓展
 
 class DateExtensions {
-  /**
-  *  获取Component的值
-  *
-  * @param {date} 日期
-  * @param {component} Component类型
-  */
-  valueOf(date,component) {
+
+
+  // 检查日期是否在今天
+  isInToday() {
 
   }
 
-  // 是否今日
-  isInToday(date) {
+  // 检查日期是否在明天
+  isInTomorrow() {
 
   }
 
-  // 是否明日
-  isInTomorrow(date) {
-
-  }
-
-  // 是否昨日
-  isInYesterday(date) {
+  // 检查日期是否在昨天
+  isInYesterday() {
 
   }
 
   // 返回明天
-  tomorrowOf(date) {
+  tomorrow() {
 
   }
 
   // 返回昨天
-  yesterdayOf(date) {
+  yesterday() {
 
   }
 
   // 返回下星期
-  nextWeekOn(date) {
+  nextWeek() {
 
   }
 }
